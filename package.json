@@ -1,0 +1,31 @@
+{
+  "name": "rolley",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "node_modules/.bin/eslint -f unix --fix lib server.js && echo 'eslint passed :)' || (echo 'eslint failed :(' && exit 1)",
+    "test": "RET=0; bash run.sh 'nyc --reporter=html --reporter=text --reporter=text-summary ./node_modules/mocha/bin/mocha || RET=$?; npm run eslint || RET=$?; exit $RET'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgianelle/rolley.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgianelle/rolley/issues"
+  },
+  "homepage": "https://github.com/cgianelle/rolley#readme",
+  "dependencies": {
+    "config": "^1.30.0",
+    "npm": "^6.0.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.1.1",
+    "nyc": "^11.7.1"
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "start": {
+        "test": "This is the start node",
+        "next": "end"
+    },
+    "end": {
+        "test": "This is the end node",
+        "next": ""
+    }
+}
