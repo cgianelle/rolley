@@ -10,7 +10,7 @@ module.exports = {
     "node": true,
     "es6":   true
   },
-  "extends": "eslint:recommended",
+  // "extends": "eslint:recommended",
   "rules": {
     "indent": [ 2, 4 ],
     "eqeqeq": [2,"smart"],

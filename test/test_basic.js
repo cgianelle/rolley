@@ -1,5 +1,5 @@
 const expect = require('chai').expect;
-var rolley = require('./../lib/rolley');
+var checker = require('./../lib/checker');
 
 describe('Basic Flow Test From Start Node to End Node', () => {
     it('should throw an error when it encounters a scenario that does not have a start element', () => {
@@ -10,7 +10,7 @@ describe('Basic Flow Test From Start Node to End Node', () => {
             }
         };
         let func = () => {
-            rolley.run(simple);
+            checker.check(simple);
         };
         expect(func).to.throw();
     });  
@@ -23,7 +23,7 @@ describe('Basic Flow Test From Start Node to End Node', () => {
             }
         };
         let func = () => {
-            rolley.run(simple);
+            checker.check(simple);
         };
         expect(func).to.throw();
     });    
